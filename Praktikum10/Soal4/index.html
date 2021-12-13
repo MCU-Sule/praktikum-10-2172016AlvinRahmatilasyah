@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-compatible" content="IE-edge">
+        <meta name="author" content="Alvin Rahmatilasyah 2172016">
+        <title>index</title>
+        <style>
+        #bulat{
+            width: 30px;
+            height: 30px;
+            border: 1px solid red;
+            background-color: red;
+            border-radius: 50%;
+            position: absolute;
+            display: none;
+        }
+        </style>
+    </head>
+    <body>
+        <script>
+            document.write("<div id='bulat'>")
+            window.addEventListener('mousemove', function(gerak){ 
+                document.getElementById("bulat").style.display = "block";
+                document.getElementById("bulat").style.left = gerak.clientX  ;
+                document.getElementById("bulat").style.top = gerak.clientY ; 
+            }) 
+            document.write("</div>")
+        </script>
+    </body>
+</html>

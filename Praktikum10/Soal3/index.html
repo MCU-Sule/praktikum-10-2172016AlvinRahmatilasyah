@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-compatible" content="IE-edge">
+        <meta name="author" content="Alvin Rahmatilasyah 2172016">
+        <title>index</title>
+        <style>
+            div {
+                border: 1px solid black;
+                display: inline-flex;
+                width: 100px;
+                height: 100px;
+                text-align: center;
+                font-size: 50px;
+                justify-content: center;
+                align-items: center;
+                padding: center;
+                column-span: center;
+            }
+    
+        </style>
+    </head>
+    <body>
+       <script>
+           document.body.addEventListener('keydown', function (contoh) {
+            const {div} = block;
+            switch (contoh.key) {
+                case 'ArrowUp' : div.top= '${parseInt(style.top) + modifer} px' ; break;
+                case 'ArrowDown' : div.top= '${parseInt(style.top) - modifer} px' ; break;
+                case 'ArrowLeft' : div.top= '${parseInt(style.top)} px' ; break;
+                case 'ArrowRight' : div.top= '${parseInt(style.top)} px' ; break;
+            }
+           });
+       </script>
+       <div class="hasil" > </div>
+       <div class="hasil"> </div>
+       <div class="hasil"> </div>
+       <div class="hasil"> </div>
+       <div class="hasil"> </div>
+    </body>
+</html> 
+               
